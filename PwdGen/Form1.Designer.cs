@@ -47,13 +47,17 @@
             this.label8 = new System.Windows.Forms.Label();
             this.tbPasswords = new System.Windows.Forms.TextBox();
             this.llCopyToClipboard = new System.Windows.Forms.LinkLabel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numChars)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPasswords)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // numChars
             // 
-            this.numChars.Location = new System.Drawing.Point(277, 119);
+            this.numChars.Location = new System.Drawing.Point(277, 170);
             this.numChars.Maximum = new decimal(new int[] {
             30,
             0,
@@ -76,7 +80,7 @@
             // btnGenerate
             // 
             this.btnGenerate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGenerate.Location = new System.Drawing.Point(43, 576);
+            this.btnGenerate.Location = new System.Drawing.Point(40, 570);
             this.btnGenerate.Name = "btnGenerate";
             this.btnGenerate.Size = new System.Drawing.Size(390, 50);
             this.btnGenerate.TabIndex = 1;
@@ -87,7 +91,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 121);
+            this.label1.Location = new System.Drawing.Point(40, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(142, 25);
             this.label1.TabIndex = 2;
@@ -96,7 +100,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 180);
+            this.label2.Location = new System.Drawing.Point(6, 40);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 25);
             this.label2.TabIndex = 3;
@@ -105,7 +109,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 240);
+            this.label3.Location = new System.Drawing.Point(6, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(160, 25);
             this.label3.TabIndex = 4;
@@ -114,7 +118,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 300);
+            this.label4.Location = new System.Drawing.Point(6, 121);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(85, 25);
             this.label4.TabIndex = 5;
@@ -123,7 +127,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(43, 360);
+            this.label5.Location = new System.Drawing.Point(6, 159);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(114, 25);
             this.label5.TabIndex = 6;
@@ -132,16 +136,16 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(43, 430);
+            this.label6.Location = new System.Drawing.Point(6, 40);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(127, 25);
+            this.label6.Size = new System.Drawing.Size(161, 25);
             this.label6.TabIndex = 7;
-            this.label6.Text = "Dissimilar only";
+            this.label6.Text = "Remove ambigous";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(43, 503);
+            this.label7.Location = new System.Drawing.Point(40, 120);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(189, 25);
             this.label7.TabIndex = 8;
@@ -149,7 +153,7 @@
             // 
             // numPasswords
             // 
-            this.numPasswords.Location = new System.Drawing.Point(277, 501);
+            this.numPasswords.Location = new System.Drawing.Point(277, 118);
             this.numPasswords.Maximum = new decimal(new int[] {
             30,
             0,
@@ -174,7 +178,7 @@
             this.cbLowercase.AutoSize = true;
             this.cbLowercase.Checked = true;
             this.cbLowercase.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbLowercase.Location = new System.Drawing.Point(277, 180);
+            this.cbLowercase.Location = new System.Drawing.Point(250, 39);
             this.cbLowercase.Name = "cbLowercase";
             this.cbLowercase.Size = new System.Drawing.Size(114, 29);
             this.cbLowercase.TabIndex = 10;
@@ -186,7 +190,7 @@
             this.cbUppercase.AutoSize = true;
             this.cbUppercase.Checked = true;
             this.cbUppercase.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbUppercase.Location = new System.Drawing.Point(277, 240);
+            this.cbUppercase.Location = new System.Drawing.Point(250, 80);
             this.cbUppercase.Name = "cbUppercase";
             this.cbUppercase.Size = new System.Drawing.Size(124, 29);
             this.cbUppercase.TabIndex = 11;
@@ -198,7 +202,7 @@
             this.cbNumbers.AutoSize = true;
             this.cbNumbers.Checked = true;
             this.cbNumbers.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbNumbers.Location = new System.Drawing.Point(277, 300);
+            this.cbNumbers.Location = new System.Drawing.Point(250, 120);
             this.cbNumbers.Name = "cbNumbers";
             this.cbNumbers.Size = new System.Drawing.Size(120, 29);
             this.cbNumbers.TabIndex = 12;
@@ -208,7 +212,7 @@
             // cbSpecials
             // 
             this.cbSpecials.AutoSize = true;
-            this.cbSpecials.Location = new System.Drawing.Point(277, 360);
+            this.cbSpecials.Location = new System.Drawing.Point(250, 158);
             this.cbSpecials.Name = "cbSpecials";
             this.cbSpecials.Size = new System.Drawing.Size(93, 29);
             this.cbSpecials.TabIndex = 13;
@@ -218,7 +222,7 @@
             // cbDissimilar
             // 
             this.cbDissimilar.AutoSize = true;
-            this.cbDissimilar.Location = new System.Drawing.Point(277, 430);
+            this.cbDissimilar.Location = new System.Drawing.Point(250, 39);
             this.cbDissimilar.Name = "cbDissimilar";
             this.cbDissimilar.Size = new System.Drawing.Size(79, 29);
             this.cbDissimilar.TabIndex = 14;
@@ -229,7 +233,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(43, 42);
+            this.label8.Location = new System.Drawing.Point(40, 40);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(279, 38);
             this.label8.TabIndex = 15;
@@ -239,11 +243,11 @@
             // 
             this.tbPasswords.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.tbPasswords.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbPasswords.Location = new System.Drawing.Point(470, 119);
+            this.tbPasswords.Location = new System.Drawing.Point(477, 118);
             this.tbPasswords.Multiline = true;
             this.tbPasswords.Name = "tbPasswords";
             this.tbPasswords.ReadOnly = true;
-            this.tbPasswords.Size = new System.Drawing.Size(567, 507);
+            this.tbPasswords.Size = new System.Drawing.Size(553, 502);
             this.tbPasswords.TabIndex = 16;
             // 
             // llCopyToClipboard
@@ -257,26 +261,46 @@
             this.llCopyToClipboard.Text = "copy to clipboard";
             this.llCopyToClipboard.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llCopyToClipboard_LinkClicked);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.cbLowercase);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.cbSpecials);
+            this.groupBox1.Controls.Add(this.cbUppercase);
+            this.groupBox1.Controls.Add(this.cbNumbers);
+            this.groupBox1.Location = new System.Drawing.Point(37, 223);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(396, 206);
+            this.groupBox1.TabIndex = 18;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Character groups";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.cbDissimilar);
+            this.groupBox2.Location = new System.Drawing.Point(37, 445);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(396, 82);
+            this.groupBox2.TabIndex = 19;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Options";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1082, 674);
+            this.ClientSize = new System.Drawing.Size(1078, 674);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.llCopyToClipboard);
             this.Controls.Add(this.tbPasswords);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.cbDissimilar);
-            this.Controls.Add(this.cbSpecials);
-            this.Controls.Add(this.cbNumbers);
-            this.Controls.Add(this.cbUppercase);
-            this.Controls.Add(this.cbLowercase);
             this.Controls.Add(this.numPasswords);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnGenerate);
             this.Controls.Add(this.numChars);
@@ -285,6 +309,10 @@
             this.Text = "Password Generator";
             ((System.ComponentModel.ISupportInitialize)(this.numChars)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numPasswords)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -310,5 +338,7 @@
         private Label label8;
         private TextBox tbPasswords;
         private LinkLabel llCopyToClipboard;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
     }
 }
